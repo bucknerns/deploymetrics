@@ -1,6 +1,6 @@
 #!/bin/bash
 wget https://download.elastic.co/elasticsearch/release/org/elasticsearch/distribution/deb/elasticsearch/2.3.1/elasticsearch-2.3.1.deb
-apt-get install nginx redis-server
+apt-get install nginx redis-server docker.io
 dpkg -i elasticsearch-2.3.1.deb
 echo 'server {
 	listen 80 default_server;
