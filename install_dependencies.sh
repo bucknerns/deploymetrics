@@ -2,7 +2,7 @@
 wget https://download.elastic.co/elasticsearch/release/org/elasticsearch/distribution/deb/elasticsearch/2.3.1/elasticsearch-2.3.1.deb
 sudo add-apt-repository -y ppa:webupd8team/java
 sudo apt-get update 
-apt-get install nginx redis-server docker.io oracle-java8-installer
+apt-get install -qy nginx redis-server docker.io oracle-java8-installer
 dpkg -i elasticsearch-2.3.1.deb
 echo 'server {
 	listen 80 default_server;
