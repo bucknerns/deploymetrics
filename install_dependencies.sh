@@ -12,5 +12,3 @@ echo 'server {
 
 echo network.host: 127.0.0.1 > /etc/elasticsearch/elasticsearch.yml
 echo http.port: 9200  >> /etc/elasticsearch/elasticsearch.yml
-service nginx restart
-service elasticsearch restart
