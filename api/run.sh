@@ -4,4 +4,4 @@ cp /root/uwsgi.ini /configs/api.ini
 cp /root/nginx.conf /configs/api.conf
 cd /root/metricsandstuff
 git pull
-uwsgi --ini /configs/uwsgi.ini
+uwsgi --ini /configs/api.ini
