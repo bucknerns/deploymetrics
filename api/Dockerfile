@@ -14,7 +14,7 @@ RUN wget https://bootstrap.pypa.io/get-pip.py
 RUN python get-pip.py
 RUN pip install virtualenv uwsgi
 RUN virtualenv env
-RUN git clone https://github.com/bucknerns/metricsandstuff #
+RUN git clone https://github.com/bucknerns/metricsandstuff
 WORKDIR /root/metricsandstuff
 RUN git checkout temp_work
 RUN /root/env/bin/pip install -e .
