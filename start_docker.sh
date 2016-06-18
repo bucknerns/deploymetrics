@@ -17,13 +17,13 @@ else
     "api" )
       $API_RUN
     ;;
-        "kibana" )
+    "kibana" )
       $KIBANA_RUN
     ;;
     "rm" )
       if [ "$#" -lt 2 ]; then
         sudo docker rm -f api kibana
-      fi 
+      fi
     ;;
     *) echo "Invalid option. Try another one.";;
     esac
