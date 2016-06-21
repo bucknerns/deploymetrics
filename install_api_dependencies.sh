@@ -10,8 +10,9 @@ echo 'server {
 }'> /etc/nginx/sites-enabled/default
 
 git clone https://github.com/bucknerns/metricsandstuff
-cp -r metricsandstuff/doc /var/www
-echo 'location /doc {
+rm -rf /var/www/docs
+cp -r metricsandstuff/doc /var/www/docs
+echo 'location /docs {
     root /var/www;
     index index.html;
 }' > /configs/docs.conf
