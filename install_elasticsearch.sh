@@ -1,3 +1,10 @@
+ROOT_UID="0"
+
+#Check if run as root
+if [ "$UID" -ne "$ROOT_UID" ] ; then
+	echo "You must be root to do that!"
+	exit 1
+fi
 wget https://download.elastic.co/elasticsearch/release/org/elasticsearch/distribution/deb/elasticsearch/2.3.1/elasticsearch-2.3.1.deb
 sudo add-apt-repository -y ppa:webupd8team/java
 sudo apt-get update
