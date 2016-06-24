@@ -30,4 +30,4 @@ python get-pip.py
 pip install virtualenv
 virtualenv env
 /root/env/bin/pip install -e ./metricsandstuff/
-echo 'alias activate="source /root/env/bin/activate"' >> ~/.bashrc
+echo 'alias activate="source /root/env/bin/activate"' >> /root/.bashrc
